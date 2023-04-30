@@ -4,10 +4,9 @@ const morgan=require('morgan');
 const path=require('path');
 const app=express();
 
-const PORT=8000;  //step1
+const PORT=process.env.PORT||8000;  //step1
 
 const routes=require('./Routes/api');
-// const MongoDB_URI="mongodb+srv://mitranjaykrishna:0TY4DRRiPUgifR19@learning.hwqyjma.mongodb.net/?retryWrites=true&w=majority"
 
 //step 2
 mongoose.connect(process.env.MongoDB_URI || 'mongodb://localhost:27017/reactMongo',{useNewUrlParser:true})
