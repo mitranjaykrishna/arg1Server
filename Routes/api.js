@@ -2,7 +2,7 @@ const express=require('express');
 
 const router=express.Router();
 
-const BlogPost=require('../Models/blogPost');
+// const BlogPost=require('../Models/blogPost');
 
 const CertificatePost=require('../Models/certificatePost');
 
